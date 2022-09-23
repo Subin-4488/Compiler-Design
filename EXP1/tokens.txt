@@ -1,0 +1,103 @@
+< CHARACTER(S), TOKEN>
+
+<< #, operator >>
+<< include,keyword >>
+<< <, operator >>
+<< stdio.h, identifier >>
+<< >, operator >>
+<< 1, literal >>
+<< int,keyword >>
+<< main,keyword >>
+<< (, seperator >>
+<< ), seperator >>
+<< {, seperator >>
+<< double,keyword >>
+<< n1, identifier >>
+<< ,, seperator >>
+<< n2, identifier >>
+<< ,, seperator >>
+<< n3, identifier >>
+<< ;, seperator >>
+<< printf,keyword >>
+<< (, seperator >>
+<< "Enter three different numbers: ", literal >>
+<< ), seperator >>
+<< ;, seperator >>
+<< scanf,keyword >>
+<< (, seperator >>
+<< "%lf %lf %lf", literal >>
+<< ,, seperator >>
+<< &, operator >>
+<< n1, identifier >>
+<< ,, seperator >>
+<< &, operator >>
+<< n2, identifier >>
+<< ,, seperator >>
+<< &, operator >>
+<< n3, identifier >>
+<< ), seperator >>
+<< ;, seperator >>
+<< if,keyword >>
+<< (, seperator >>
+<< n1, identifier >>
+<< >=, operator >>
+<< =, operator >>
+<< n2, identifier >>
+<< &, operator >>
+<< &, operator >>
+<< n1, identifier >>
+<< >=, operator >>
+<< =, operator >>
+<< n3, identifier >>
+<< ), seperator >>
+<< printf,keyword >>
+<< (, seperator >>
+<< "%.2f is the largest number.", literal >>
+<< ,, seperator >>
+<< n1, identifier >>
+<< ), seperator >>
+<< ;, seperator >>
+<< if,keyword >>
+<< (, seperator >>
+<< n2, identifier >>
+<< >=, operator >>
+<< =, operator >>
+<< n1, identifier >>
+<< &, operator >>
+<< &, operator >>
+<< n2, identifier >>
+<< >=, operator >>
+<< =, operator >>
+<< n3, identifier >>
+<< ), seperator >>
+<< printf,keyword >>
+<< (, seperator >>
+<< "%.2f is the largest number.", literal >>
+<< ,, seperator >>
+<< n2, identifier >>
+<< ), seperator >>
+<< ;, seperator >>
+<< if,keyword >>
+<< (, seperator >>
+<< n3, identifier >>
+<< >=, operator >>
+<< =, operator >>
+<< n1, identifier >>
+<< &, operator >>
+<< &, operator >>
+<< n3, identifier >>
+<< >=, operator >>
+<< =, operator >>
+<< n2, identifier >>
+<< ), seperator >>
+<< printf,keyword >>
+<< (, seperator >>
+<< "%.2f is the largest number.", literal >>
+<< ,, seperator >>
+<< n3, identifier >>
+<< ), seperator >>
+<< ;, seperator >>
+<< return,keyword >>
+<< 0, literal >>
+<< ;, seperator >>
+<< }, seperator >>
