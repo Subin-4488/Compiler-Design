@@ -1,0 +1,1564 @@
+< CHARACTER(S), TOKEN>
+
+<< #, operator >>
+<< include,keyword >>
+<< <, operator >>
+<< stdio.h, identifier >>
+<< >, operator >>
+<< #, operator >>
+<< include,keyword >>
+<< <, operator >>
+<< string.h, identifier >>
+<< >, operator >>
+<< #, operator >>
+<< include,keyword >>
+<< <, operator >>
+<< stdlib.h, identifier >>
+<< >, operator >>
+<< #, operator >>
+<< include,keyword >>
+<< <, operator >>
+<< unistd.h, identifier >>
+<< >, operator >>
+<< FILE,keyword >>
+<< *fin, identifier >>
+<< =, operator >>
+<< NULL,keyword >>
+<< ,, seperator >>
+<< *fout, identifier >>
+<< =, operator >>
+<< NULL,keyword >>
+<< ;, seperator >>
+<< char,keyword >>
+<< line, identifier >>
+<< [, operator >>
+<< 1000, literal >>
+<< ], operator >>
+<< ;, seperator >>
+<< char,keyword >>
+<< subs, identifier >>
+<< [, operator >>
+<< 1000, literal >>
+<< ], operator >>
+<< ;, seperator >>
+<< int,keyword >>
+<< kws, identifier >>
+<< =, operator >>
+<< 26, literal >>
+<< ;, seperator >>
+<< int,keyword >>
+<< ops, identifier >>
+<< =, operator >>
+<< 13, literal >>
+<< ;, seperator >>
+<< int,keyword >>
+<< seps, identifier >>
+<< =, operator >>
+<< 7, literal >>
+<< ;, seperator >>
+<< int,keyword >>
+<< lits, identifier >>
+<< =, operator >>
+<< 12, literal >>
+<< ;, seperator >>
+<< char,keyword >>
+<< keywords, identifier >>
+<< [, operator >>
+<< ], operator >>
+<< [, operator >>
+<< 20, literal >>
+<< ], operator >>
+<< =, operator >>
+<< {, seperator >>
+<< "void", literal >>
+<< ,, seperator >>
+<< "main", literal >>
+<< ,, seperator >>
+<< "include", literal >>
+<< ,, seperator >>
+<< "define", literal >>
+<< ,, seperator >>
+<< "printf", literal >>
+<< ,, seperator >>
+<< "scanf", literal >>
+<< ,, seperator >>
+<< "fgets", literal >>
+<< ,, seperator >>
+<< "for", literal >>
+<< ,, seperator >>
+<< "while", literal >>
+<< ,, seperator >>
+<< "int", literal >>
+<< ,, seperator >>
+<< "char", literal >>
+<< ,, seperator >>
+<< "strlen", literal >>
+<< ,, seperator >>
+<< "FILE", literal >>
+<< ,, seperator >>
+<< "fopen", literal >>
+<< ,, seperator >>
+<< "feof", literal >>
+<< ,, seperator >>
+<< "if", literal >>
+<< ,, seperator >>
+<< "return", literal >>
+<< ,, seperator >>
+<< "double", literal >>
+<< ,, seperator >>
+<< "continue", literal >>
+<< ,, seperator >>
+<< "break", literal >>
+<< ,, seperator >>
+<< "strcmp", literal >>
+<< ,, seperator >>
+<< "strcat", literal >>
+<< ,, seperator >>
+<< "fflush", literal >>
+<< ,, seperator >>
+<< "fscanf", literal >>
+<< ,, seperator >>
+<< "fprintf", literal >>
+<< ,, seperator >>
+<< "strcpy", literal >>
+<< }, seperator >>
+<< ;, seperator >>
+<< char,keyword >>
+<< operators, identifier >>
+<< [, operator >>
+<< ], operator >>
+<< [, operator >>
+<< 20, literal >>
+<< ], operator >>
+<< =, operator >>
+<< {, seperator >>
+<< "+", literal >>
+<< ,, seperator >>
+<< "-", literal >>
+<< ,, seperator >>
+<< "&", literal >>
+<< ,, seperator >>
+<< "%", literal >>
+<< ,, seperator >>
+<< "=", literal >>
+<< ,, seperator >>
+<< "!", literal >>
+<< ,, seperator >>
+<< "#", literal >>
+<< ,, seperator >>
+<< ">=", literal >>
+<< ,, seperator >>
+<< "<=", literal >>
+<< ,, seperator >>
+<< ">", literal >>
+<< ,, seperator >>
+<< "<", literal >>
+<< ,, seperator >>
+<< "[", literal >>
+<< ,, seperator >>
+<< "]", literal >>
+<< }, seperator >>
+<< ;, seperator >>
+<< char,keyword >>
+<< seperators, identifier >>
+<< [, operator >>
+<< ], operator >>
+<< [, operator >>
+<< 20, literal >>
+<< ], operator >>
+<< =, operator >>
+<< {, seperator >>
+<< "{", literal >>
+<< ,, seperator >>
+<< "}", literal >>
+<< ,, seperator >>
+<< "(", literal >>
+<< ,, seperator >>
+<< ")", literal >>
+<< ,, seperator >>
+<< ";", literal >>
+<< ,, seperator >>
+<< ",", literal >>
+<< ,, seperator >>
+<< "\n", literal >>
+<< ,, seperator >>
+<< }, seperator >>
+<< ;, seperator >>
+<< char,keyword >>
+<< literals, identifier >>
+<< [, operator >>
+<< ], operator >>
+<< [, operator >>
+<< 20, literal >>
+<< ], operator >>
+<< =, operator >>
+<< {, seperator >>
+<< "\", literal >>
+<< ", ", literal >>
+<< \'", identifier >>
+<< ,, seperator >>
+<< "1", literal >>
+<< ,, seperator >>
+<< "2", literal >>
+<< ,, seperator >>
+<< "3", literal >>
+<< ,, seperator >>
+<< "4", literal >>
+<< ,, seperator >>
+<< "5", literal >>
+<< ,, seperator >>
+<< "6", literal >>
+<< ,, seperator >>
+<< "7", literal >>
+<< ,, seperator >>
+<< "8", literal >>
+<< ,, seperator >>
+<< "9", literal >>
+<< ,, seperator >>
+<< "0", literal >>
+<< }, seperator >>
+<< ;, seperator >>
+<< char,keyword >>
+<< ids, identifier >>
+<< [, operator >>
+<< 1000, literal >>
+<< ], operator >>
+<< [, operator >>
+<< 1000, literal >>
+<< ], operator >>
+<< ;, seperator >>
+<< int,keyword >>
+<< id, identifier >>
+<< =, operator >>
+<< 0, literal >>
+<< ;, seperator >>
+<< void,keyword >>
+<< substring, identifier >>
+<< (, seperator >>
+<< char,keyword >>
+<< str, identifier >>
+<< [, operator >>
+<< ], operator >>
+<< ,, seperator >>
+<< int,keyword >>
+<< f, identifier >>
+<< ,, seperator >>
+<< int,keyword >>
+<< l, identifier >>
+<< ), seperator >>
+<< {, seperator >>
+<< int,keyword >>
+<< n, identifier >>
+<< =, operator >>
+<< strlen,keyword >>
+<< (, seperator >>
+<< str, identifier >>
+<< ), seperator >>
+<< ;, seperator >>
+<< subs, identifier >>
+<< [, operator >>
+<< 0, literal >>
+<< ], operator >>
+<< =, operator >>
+<< '\0', literal >>
+<< ;, seperator >>
+<< int,keyword >>
+<< k, identifier >>
+<< =, operator >>
+<< 0, literal >>
+<< ;, seperator >>
+<< for,keyword >>
+<< (, seperator >>
+<< int,keyword >>
+<< i, identifier >>
+<< =, operator >>
+<< f, identifier >>
+<< ;, seperator >>
+<< i, identifier >>
+<< <, operator >>
+<< l, identifier >>
+<< ;, seperator >>
+<< i, identifier >>
+<< +, operator >>
+<< +, operator >>
+<< ), seperator >>
+<< subs, identifier >>
+<< [, operator >>
+<< k, identifier >>
+<< +, operator >>
+<< +, operator >>
+<< ], operator >>
+<< =, operator >>
+<< str, identifier >>
+<< [, operator >>
+<< i, identifier >>
+<< ], operator >>
+<< ;, seperator >>
+<< subs, identifier >>
+<< [, operator >>
+<< k, identifier >>
+<< ], operator >>
+<< =, operator >>
+<< '\0', literal >>
+<< ;, seperator >>
+<< return,keyword >>
+<< ;, seperator >>
+<< }, seperator >>
+<< void,keyword >>
+<< writeToOutput, identifier >>
+<< (, seperator >>
+<< char,keyword >>
+<< res, identifier >>
+<< [, operator >>
+<< ], operator >>
+<< ,, seperator >>
+<< int,keyword >>
+<< flag, identifier >>
+<< ), seperator >>
+<< {, seperator >>
+<< if,keyword >>
+<< (, seperator >>
+<< !, operator >>
+<< flag, identifier >>
+<< ), seperator >>
+<< fprintf,keyword >>
+<< (, seperator >>
+<< fout, identifier >>
+<< ,, seperator >>
+<< "\n%s", literal >>
+<< ,, seperator >>
+<< res, identifier >>
+<< ), seperator >>
+<< ;, seperator >>
+<< else, identifier >>
+<< {, seperator >>
+<< fprintf,keyword >>
+<< (, seperator >>
+<< fout, identifier >>
+<< ,, seperator >>
+<< "\nError: ", literal >>
+<< ), seperator >>
+<< ;, seperator >>
+<< fprintf,keyword >>
+<< (, seperator >>
+<< fout, identifier >>
+<< ,, seperator >>
+<< "%s", literal >>
+<< ,, seperator >>
+<< res, identifier >>
+<< ), seperator >>
+<< ;, seperator >>
+<< }, seperator >>
+<< fflush,keyword >>
+<< (, seperator >>
+<< fout, identifier >>
+<< ), seperator >>
+<< ;, seperator >>
+<< }, seperator >>
+<< int,keyword >>
+<< isComment, identifier >>
+<< (, seperator >>
+<< int,keyword >>
+<< start, identifier >>
+<< ,, seperator >>
+<< int,keyword >>
+<< end, identifier >>
+<< ,, seperator >>
+<< int,keyword >>
+<< n, identifier >>
+<< ), seperator >>
+<< {, seperator >>
+<< substring, identifier >>
+<< (, seperator >>
+<< line, identifier >>
+<< ,, seperator >>
+<< start, identifier >>
+<< ,, seperator >>
+<< 2, literal >>
+<< +, operator >>
+<< start, identifier >>
+<< ), seperator >>
+<< ;, seperator >>
+<< if,keyword >>
+<< (, seperator >>
+<< !, operator >>
+<< strcmp,keyword >>
+<< (, seperator >>
+<< subs, identifier >>
+<< ,, seperator >>
+<< "//", literal >>
+<< ), seperator >>
+<< ), seperator >>
+<< return,keyword >>
+<< 1, literal >>
+<< ;, seperator >>
+<< else, identifier >>
+<< if,keyword >>
+<< (, seperator >>
+<< !, operator >>
+<< strcmp,keyword >>
+<< (, seperator >>
+<< subs, identifier >>
+<< ,, seperator >>
+<< "/*", literal >>
+<< ), seperator >>
+<< ), seperator >>
+<< return,keyword >>
+<< 2, literal >>
+<< ;, seperator >>
+<< else, identifier >>
+<< if,keyword >>
+<< (, seperator >>
+<< line, identifier >>
+<< [, operator >>
+<< start, identifier >>
+<< ], operator >>
+<< =, operator >>
+<< =, operator >>
+<< '/', literal >>
+<< ), seperator >>
+<< return,keyword >>
+<< -, operator >>
+<< 1, literal >>
+<< ;, seperator >>
+<< else, identifier >>
+<< return,keyword >>
+<< 0, literal >>
+<< ;, seperator >>
+<< }, seperator >>
+<< int,keyword >>
+<< isKeyword, identifier >>
+<< (, seperator >>
+<< int,keyword >>
+<< start, identifier >>
+<< ,, seperator >>
+<< int,keyword >>
+<< end, identifier >>
+<< ,, seperator >>
+<< int,keyword >>
+<< n, identifier >>
+<< ), seperator >>
+<< {, seperator >>
+<< substring, identifier >>
+<< (, seperator >>
+<< line, identifier >>
+<< ,, seperator >>
+<< start, identifier >>
+<< ,, seperator >>
+<< end, identifier >>
+<< ), seperator >>
+<< ;, seperator >>
+<< for,keyword >>
+<< (, seperator >>
+<< int,keyword >>
+<< i, identifier >>
+<< =, operator >>
+<< 0, literal >>
+<< ;, seperator >>
+<< i, identifier >>
+<< <, operator >>
+<< kws, identifier >>
+<< ;, seperator >>
+<< i, identifier >>
+<< +, operator >>
+<< +, operator >>
+<< ), seperator >>
+<< {, seperator >>
+<< if,keyword >>
+<< (, seperator >>
+<< !, operator >>
+<< strcmp,keyword >>
+<< (, seperator >>
+<< subs, identifier >>
+<< ,, seperator >>
+<< keywords, identifier >>
+<< [, operator >>
+<< i, identifier >>
+<< ], operator >>
+<< ), seperator >>
+<< ), seperator >>
+<< return,keyword >>
+<< 1, literal >>
+<< ;, seperator >>
+<< }, seperator >>
+<< return,keyword >>
+<< 0, literal >>
+<< ;, seperator >>
+<< }, seperator >>
+<< int,keyword >>
+<< isOperator, identifier >>
+<< (, seperator >>
+<< int,keyword >>
+<< start, identifier >>
+<< ,, seperator >>
+<< int,keyword >>
+<< end, identifier >>
+<< ,, seperator >>
+<< int,keyword >>
+<< n, identifier >>
+<< ), seperator >>
+<< {, seperator >>
+<< substring, identifier >>
+<< (, seperator >>
+<< line, identifier >>
+<< ,, seperator >>
+<< start, identifier >>
+<< ,, seperator >>
+<< end, identifier >>
+<< ), seperator >>
+<< ;, seperator >>
+<< for,keyword >>
+<< (, seperator >>
+<< int,keyword >>
+<< i, identifier >>
+<< =, operator >>
+<< 0, literal >>
+<< ;, seperator >>
+<< i, identifier >>
+<< <, operator >>
+<< ops, identifier >>
+<< ;, seperator >>
+<< i, identifier >>
+<< +, operator >>
+<< +, operator >>
+<< ), seperator >>
+<< {, seperator >>
+<< if,keyword >>
+<< (, seperator >>
+<< !, operator >>
+<< strcmp,keyword >>
+<< (, seperator >>
+<< subs, identifier >>
+<< ,, seperator >>
+<< operators, identifier >>
+<< [, operator >>
+<< i, identifier >>
+<< ], operator >>
+<< ), seperator >>
+<< ), seperator >>
+<< {, seperator >>
+<< substring, identifier >>
+<< (, seperator >>
+<< line, identifier >>
+<< ,, seperator >>
+<< start, identifier >>
+<< ,, seperator >>
+<< end, identifier >>
+<< +, operator >>
+<< 1, literal >>
+<< ), seperator >>
+<< ;, seperator >>
+<< for,keyword >>
+<< (, seperator >>
+<< int,keyword >>
+<< j, identifier >>
+<< =, operator >>
+<< 0, literal >>
+<< ;, seperator >>
+<< j, identifier >>
+<< <, operator >>
+<< ops, identifier >>
+<< ;, seperator >>
+<< j, identifier >>
+<< +, operator >>
+<< +, operator >>
+<< ), seperator >>
+<< {, seperator >>
+<< if,keyword >>
+<< (, seperator >>
+<< !, operator >>
+<< strcmp,keyword >>
+<< (, seperator >>
+<< subs, identifier >>
+<< ,, seperator >>
+<< operators, identifier >>
+<< [, operator >>
+<< j, identifier >>
+<< ], operator >>
+<< ), seperator >>
+<< ), seperator >>
+<< return,keyword >>
+<< 1, literal >>
+<< ;, seperator >>
+<< }, seperator >>
+<< substring, identifier >>
+<< (, seperator >>
+<< line, identifier >>
+<< ,, seperator >>
+<< start, identifier >>
+<< ,, seperator >>
+<< end, identifier >>
+<< ), seperator >>
+<< ;, seperator >>
+<< return,keyword >>
+<< 1, literal >>
+<< ;, seperator >>
+<< }, seperator >>
+<< }, seperator >>
+<< return,keyword >>
+<< 0, literal >>
+<< ;, seperator >>
+<< }, seperator >>
+<< int,keyword >>
+<< isseperator, identifier >>
+<< (, seperator >>
+<< int,keyword >>
+<< start, identifier >>
+<< ,, seperator >>
+<< int,keyword >>
+<< end, identifier >>
+<< ,, seperator >>
+<< int,keyword >>
+<< n, identifier >>
+<< ), seperator >>
+<< {, seperator >>
+<< substring, identifier >>
+<< (, seperator >>
+<< line, identifier >>
+<< ,, seperator >>
+<< start, identifier >>
+<< ,, seperator >>
+<< end, identifier >>
+<< ), seperator >>
+<< ;, seperator >>
+<< for,keyword >>
+<< (, seperator >>
+<< int,keyword >>
+<< i, identifier >>
+<< =, operator >>
+<< 0, literal >>
+<< ;, seperator >>
+<< i, identifier >>
+<< <, operator >>
+<< seps, identifier >>
+<< ;, seperator >>
+<< i, identifier >>
+<< +, operator >>
+<< +, operator >>
+<< ), seperator >>
+<< {, seperator >>
+<< if,keyword >>
+<< (, seperator >>
+<< !, operator >>
+<< strcmp,keyword >>
+<< (, seperator >>
+<< subs, identifier >>
+<< ,, seperator >>
+<< seperators, identifier >>
+<< [, operator >>
+<< i, identifier >>
+<< ], operator >>
+<< ), seperator >>
+<< ), seperator >>
+<< return,keyword >>
+<< 1, literal >>
+<< ;, seperator >>
+<< }, seperator >>
+<< return,keyword >>
+<< 0, literal >>
+<< ;, seperator >>
+<< }, seperator >>
+<< int,keyword >>
+<< isLiteral, identifier >>
+<< (, seperator >>
+<< int,keyword >>
+<< start, identifier >>
+<< ,, seperator >>
+<< int,keyword >>
+<< end, identifier >>
+<< ,, seperator >>
+<< int,keyword >>
+<< n, identifier >>
+<< ), seperator >>
+<< {, seperator >>
+<< substring, identifier >>
+<< (, seperator >>
+<< line, identifier >>
+<< ,, seperator >>
+<< start, identifier >>
+<< ,, seperator >>
+<< 1, literal >>
+<< +, operator >>
+<< start, identifier >>
+<< ), seperator >>
+<< ;, seperator >>
+<< for,keyword >>
+<< (, seperator >>
+<< int,keyword >>
+<< i, identifier >>
+<< =, operator >>
+<< 0, literal >>
+<< ;, seperator >>
+<< i, identifier >>
+<< <, operator >>
+<< lits, identifier >>
+<< ;, seperator >>
+<< i, identifier >>
+<< +, operator >>
+<< +, operator >>
+<< ), seperator >>
+<< {, seperator >>
+<< if,keyword >>
+<< (, seperator >>
+<< !, operator >>
+<< strcmp,keyword >>
+<< (, seperator >>
+<< subs, identifier >>
+<< ,, seperator >>
+<< literals, identifier >>
+<< [, operator >>
+<< i, identifier >>
+<< ], operator >>
+<< ), seperator >>
+<< ), seperator >>
+<< {, seperator >>
+<< if,keyword >>
+<< (, seperator >>
+<< !, operator >>
+<< strcmp,keyword >>
+<< (, seperator >>
+<< subs, identifier >>
+<< ,, seperator >>
+<< "\", literal >>
+<< ", literal >>
+<< ), seperator >>
+<< ), seperator >>
+<< return,keyword >>
+<< 1, literal >>
+<< ;, seperator >>
+<< else, identifier >>
+<< if,keyword >>
+<< (, seperator >>
+<< !, operator >>
+<< strcmp,keyword >>
+<< (, seperator >>
+<< subs, identifier >>
+<< ,, seperator >>
+<< "\'", literal >>
+<< ), seperator >>
+<< ), seperator >>
+<< return,keyword >>
+<< 2, literal >>
+<< ;, seperator >>
+<< else, identifier >>
+<< return,keyword >>
+<< 3, literal >>
+<< ;, seperator >>
+<< }, seperator >>
+<< }, seperator >>
+<< return,keyword >>
+<< 0, literal >>
+<< ;, seperator >>
+<< }, seperator >>
+<< void,keyword >>
+<< findTerminatingComment, identifier >>
+<< (, seperator >>
+<< int,keyword >>
+<< start, identifier >>
+<< ), seperator >>
+<< {, seperator >>
+<< while,keyword >>
+<< (, seperator >>
+<< 1, literal >>
+<< ), seperator >>
+<< {, seperator >>
+<< for,keyword >>
+<< (, seperator >>
+<< int,keyword >>
+<< i, identifier >>
+<< =, operator >>
+<< start, identifier >>
+<< ;, seperator >>
+<< i, identifier >>
+<< <, operator >>
+<< strlen,keyword >>
+<< (, seperator >>
+<< line, identifier >>
+<< ), seperator >>
+<< -, operator >>
+<< 1, literal >>
+<< ;, seperator >>
+<< i, identifier >>
+<< +, operator >>
+<< +, operator >>
+<< ), seperator >>
+<< {, seperator >>
+<< if,keyword >>
+<< (, seperator >>
+<< line, identifier >>
+<< [, operator >>
+<< i, identifier >>
+<< ], operator >>
+<< =, operator >>
+<< =, operator >>
+<< '*', literal >>
+<< &, operator >>
+<< &, operator >>
+<< line, identifier >>
+<< [, operator >>
+<< i, identifier >>
+<< +, operator >>
+<< 1, literal >>
+<< ], operator >>
+<< =, operator >>
+<< =, operator >>
+<< '/', literal >>
+<< ), seperator >>
+<< {, seperator >>
+<< line, identifier >>
+<< [, operator >>
+<< 0, literal >>
+<< ], operator >>
+<< =, operator >>
+<< '\0', literal >>
+<< ;, seperator >>
+<< return,keyword >>
+<< ;, seperator >>
+<< }, seperator >>
+<< }, seperator >>
+<< fgets,keyword >>
+<< (, seperator >>
+<< line, identifier >>
+<< ,, seperator >>
+<< 250, literal >>
+<< ,, seperator >>
+<< fin, identifier >>
+<< ), seperator >>
+<< ;, seperator >>
+<< start, identifier >>
+<< =, operator >>
+<< 0, literal >>
+<< ;, seperator >>
+<< }, seperator >>
+<< }, seperator >>
+<< void,keyword >>
+<< processLine, identifier >>
+<< (, seperator >>
+<< ), seperator >>
+<< {, seperator >>
+<< int,keyword >>
+<< n, identifier >>
+<< =, operator >>
+<< strlen,keyword >>
+<< (, seperator >>
+<< line, identifier >>
+<< ), seperator >>
+<< ;, seperator >>
+<< for,keyword >>
+<< (, seperator >>
+<< int,keyword >>
+<< i, identifier >>
+<< =, operator >>
+<< 0, literal >>
+<< ;, seperator >>
+<< i, identifier >>
+<< <, operator >>
+<< n, identifier >>
+<< -, operator >>
+<< 1, literal >>
+<< ;, seperator >>
+<< i, identifier >>
+<< +, operator >>
+<< +, operator >>
+<< ), seperator >>
+<< {, seperator >>
+<< if,keyword >>
+<< (, seperator >>
+<< line, identifier >>
+<< [, operator >>
+<< i, identifier >>
+<< ], operator >>
+<< =, operator >>
+<< =, operator >>
+<< ' ', literal >>
+<< ||, identifier >>
+<< line, identifier >>
+<< [, operator >>
+<< i, identifier >>
+<< ], operator >>
+<< =, operator >>
+<< =, operator >>
+<< '\t', literal >>
+<< ), seperator >>
+<< continue,keyword >>
+<< ;, seperator >>
+<< for,keyword >>
+<< (, seperator >>
+<< int,keyword >>
+<< j, identifier >>
+<< =, operator >>
+<< i, identifier >>
+<< +, operator >>
+<< 1, literal >>
+<< ;, seperator >>
+<< j, identifier >>
+<< <, operator >>
+<< n, identifier >>
+<< ;, seperator >>
+<< j, identifier >>
+<< +, operator >>
+<< +, operator >>
+<< ), seperator >>
+<< {, seperator >>
+<< int,keyword >>
+<< ret, identifier >>
+<< =, operator >>
+<< -, operator >>
+<< 2, literal >>
+<< ;, seperator >>
+<< if,keyword >>
+<< (, seperator >>
+<< (, seperator >>
+<< ret, identifier >>
+<< =, operator >>
+<< isComment, identifier >>
+<< (, seperator >>
+<< i, identifier >>
+<< ,, seperator >>
+<< j, identifier >>
+<< ,, seperator >>
+<< n, identifier >>
+<< ), seperator >>
+<< ), seperator >>
+<< >, operator >>
+<< 0, literal >>
+<< ), seperator >>
+<< {, seperator >>
+<< if,keyword >>
+<< (, seperator >>
+<< ret, identifier >>
+<< =, operator >>
+<< =, operator >>
+<< 1, literal >>
+<< ), seperator >>
+<< {, seperator >>
+<< return,keyword >>
+<< ;, seperator >>
+<< }, seperator >>
+<< else, identifier >>
+<< {, seperator >>
+<< findTerminatingComment, identifier >>
+<< (, seperator >>
+<< i, identifier >>
+<< ), seperator >>
+<< ;, seperator >>
+<< return,keyword >>
+<< ;, seperator >>
+<< }, seperator >>
+<< }, seperator >>
+<< else, identifier >>
+<< if,keyword >>
+<< (, seperator >>
+<< ret, identifier >>
+<< =, operator >>
+<< =, operator >>
+<< -, operator >>
+<< 1, literal >>
+<< ), seperator >>
+<< {, seperator >>
+<< writeToOutput, identifier >>
+<< (, seperator >>
+<< "/", literal >>
+<< ,, seperator >>
+<< 1, literal >>
+<< ), seperator >>
+<< ;, seperator >>
+<< }, seperator >>
+<< else, identifier >>
+<< if,keyword >>
+<< (, seperator >>
+<< (, seperator >>
+<< ret, identifier >>
+<< =, operator >>
+<< isOperator, identifier >>
+<< (, seperator >>
+<< i, identifier >>
+<< ,, seperator >>
+<< j, identifier >>
+<< ,, seperator >>
+<< n, identifier >>
+<< ), seperator >>
+<< ), seperator >>
+<< >, operator >>
+<< 0, literal >>
+<< ), seperator >>
+<< {, seperator >>
+<< char,keyword >>
+<< buff, identifier >>
+<< [, operator >>
+<< 100, literal >>
+<< ], operator >>
+<< ;, seperator >>
+<< buff, identifier >>
+<< [, operator >>
+<< 0, literal >>
+<< ], operator >>
+<< =, operator >>
+<< '\0', literal >>
+<< ;, seperator >>
+<< strcat,keyword >>
+<< (, seperator >>
+<< buff, identifier >>
+<< ,, seperator >>
+<< "<< ", literal >>
+<< ), seperator >>
+<< ;, seperator >>
+<< strcat,keyword >>
+<< (, seperator >>
+<< buff, identifier >>
+<< ,, seperator >>
+<< subs, identifier >>
+<< ), seperator >>
+<< ;, seperator >>
+<< strcat,keyword >>
+<< (, seperator >>
+<< buff, identifier >>
+<< ,, seperator >>
+<< ", operator >>", literal >>
+<< ), seperator >>
+<< ;, seperator >>
+<< writeToOutput, identifier >>
+<< (, seperator >>
+<< buff, identifier >>
+<< ,, seperator >>
+<< 0, literal >>
+<< ), seperator >>
+<< ;, seperator >>
+<< i, identifier >>
+<< =, operator >>
+<< j, identifier >>
+<< -, operator >>
+<< 1, literal >>
+<< ;, seperator >>
+<< break,keyword >>
+<< ;, seperator >>
+<< }, seperator >>
+<< else, identifier >>
+<< if,keyword >>
+<< (, seperator >>
+<< (, seperator >>
+<< ret, identifier >>
+<< =, operator >>
+<< isKeyword, identifier >>
+<< (, seperator >>
+<< i, identifier >>
+<< ,, seperator >>
+<< j, identifier >>
+<< ,, seperator >>
+<< n, identifier >>
+<< ), seperator >>
+<< ), seperator >>
+<< >, operator >>
+<< 0, literal >>
+<< ), seperator >>
+<< {, seperator >>
+<< char,keyword >>
+<< buff, identifier >>
+<< [, operator >>
+<< 100, literal >>
+<< ], operator >>
+<< ;, seperator >>
+<< buff, identifier >>
+<< [, operator >>
+<< 0, literal >>
+<< ], operator >>
+<< =, operator >>
+<< '\0', literal >>
+<< ;, seperator >>
+<< strcat,keyword >>
+<< (, seperator >>
+<< buff, identifier >>
+<< ,, seperator >>
+<< "<< ", literal >>
+<< ), seperator >>
+<< ;, seperator >>
+<< strcat,keyword >>
+<< (, seperator >>
+<< buff, identifier >>
+<< ,, seperator >>
+<< subs, identifier >>
+<< ), seperator >>
+<< ;, seperator >>
+<< strcat,keyword >>
+<< (, seperator >>
+<< buff, identifier >>
+<< ,, seperator >>
+<< ",keyword >>", literal >>
+<< ), seperator >>
+<< ;, seperator >>
+<< writeToOutput, identifier >>
+<< (, seperator >>
+<< buff, identifier >>
+<< ,, seperator >>
+<< 0, literal >>
+<< ), seperator >>
+<< ;, seperator >>
+<< i, identifier >>
+<< =, operator >>
+<< j, identifier >>
+<< -, operator >>
+<< 1, literal >>
+<< ;, seperator >>
+<< break,keyword >>
+<< ;, seperator >>
+<< }, seperator >>
+<< else, identifier >>
+<< if,keyword >>
+<< (, seperator >>
+<< (, seperator >>
+<< ret, identifier >>
+<< =, operator >>
+<< isseperator, identifier >>
+<< (, seperator >>
+<< i, identifier >>
+<< ,, seperator >>
+<< j, identifier >>
+<< ,, seperator >>
+<< n, identifier >>
+<< ), seperator >>
+<< >, operator >>
+<< 0, literal >>
+<< ), seperator >>
+<< ), seperator >>
+<< {, seperator >>
+<< char,keyword >>
+<< buff, identifier >>
+<< [, operator >>
+<< 100, literal >>
+<< ], operator >>
+<< ;, seperator >>
+<< buff, identifier >>
+<< [, operator >>
+<< 0, literal >>
+<< ], operator >>
+<< =, operator >>
+<< '\0', literal >>
+<< ;, seperator >>
+<< strcat,keyword >>
+<< (, seperator >>
+<< buff, identifier >>
+<< ,, seperator >>
+<< "<< ", literal >>
+<< ), seperator >>
+<< ;, seperator >>
+<< strcat,keyword >>
+<< (, seperator >>
+<< buff, identifier >>
+<< ,, seperator >>
+<< subs, identifier >>
+<< ), seperator >>
+<< ;, seperator >>
+<< strcat,keyword >>
+<< (, seperator >>
+<< buff, identifier >>
+<< ,, seperator >>
+<< ", seperator >>", literal >>
+<< ), seperator >>
+<< ;, seperator >>
+<< writeToOutput, identifier >>
+<< (, seperator >>
+<< buff, identifier >>
+<< ,, seperator >>
+<< 0, literal >>
+<< ), seperator >>
+<< ;, seperator >>
+<< i, identifier >>
+<< =, operator >>
+<< j, identifier >>
+<< -, operator >>
+<< 1, literal >>
+<< ;, seperator >>
+<< break,keyword >>
+<< ;, seperator >>
+<< }, seperator >>
+<< else, identifier >>
+<< if,keyword >>
+<< (, seperator >>
+<< (, seperator >>
+<< ret, identifier >>
+<< =, operator >>
+<< isLiteral, identifier >>
+<< (, seperator >>
+<< i, identifier >>
+<< ,, seperator >>
+<< j, identifier >>
+<< ,, seperator >>
+<< n, identifier >>
+<< ), seperator >>
+<< ), seperator >>
+<< >, operator >>
+<< 0, literal >>
+<< ), seperator >>
+<< {, seperator >>
+<< if,keyword >>
+<< (, seperator >>
+<< ret, identifier >>
+<< =, operator >>
+<< =, operator >>
+<< 1, literal >>
+<< ), seperator >>
+<< {, seperator >>
+<< while,keyword >>
+<< (, seperator >>
+<< j, identifier >>
+<< <, operator >>
+<< strlen,keyword >>
+<< (, seperator >>
+<< line, identifier >>
+<< ), seperator >>
+<< ), seperator >>
+<< {, seperator >>
+<< if,keyword >>
+<< (, seperator >>
+<< line, identifier >>
+<< [, operator >>
+<< j, identifier >>
+<< ], operator >>
+<< =, operator >>
+<< =, operator >>
+<< '\"', literal >>
+<< ), seperator >>
+<< {, seperator >>
+<< substring, identifier >>
+<< (, seperator >>
+<< line, identifier >>
+<< ,, seperator >>
+<< i, identifier >>
+<< ,, seperator >>
+<< j, identifier >>
+<< +, operator >>
+<< 1, literal >>
+<< ), seperator >>
+<< ;, seperator >>
+<< i, identifier >>
+<< =, operator >>
+<< j, identifier >>
+<< ;, seperator >>
+<< break,keyword >>
+<< ;, seperator >>
+<< }, seperator >>
+<< j, identifier >>
+<< +, operator >>
+<< +, operator >>
+<< ;, seperator >>
+<< }, seperator >>
+<< }, seperator >>
+<< else, identifier >>
+<< if,keyword >>
+<< (, seperator >>
+<< ret, identifier >>
+<< =, operator >>
+<< =, operator >>
+<< 2, literal >>
+<< ), seperator >>
+<< {, seperator >>
+<< while,keyword >>
+<< (, seperator >>
+<< j, identifier >>
+<< <, operator >>
+<< strlen,keyword >>
+<< (, seperator >>
+<< line, identifier >>
+<< ), seperator >>
+<< ), seperator >>
+<< {, seperator >>
+<< if,keyword >>
+<< (, seperator >>
+<< line, identifier >>
+<< [, operator >>
+<< j, identifier >>
+<< ], operator >>
+<< =, operator >>
+<< =, operator >>
+<< '\', literal >>
+<< ', literal >>
+<< ), seperator >>
+<< {, seperator >>
+<< substring, identifier >>
+<< (, seperator >>
+<< line, identifier >>
+<< ,, seperator >>
+<< i, identifier >>
+<< ,, seperator >>
+<< j, identifier >>
+<< +, operator >>
+<< 1, literal >>
+<< ), seperator >>
+<< ;, seperator >>
+<< i, identifier >>
+<< =, operator >>
+<< j, identifier >>
+<< ;, seperator >>
+<< break,keyword >>
+<< ;, seperator >>
+<< }, seperator >>
+<< j, identifier >>
+<< +, operator >>
+<< +, operator >>
+<< ;, seperator >>
+<< }, seperator >>
+<< }, seperator >>
+<< else, identifier >>
+<< if,keyword >>
+<< (, seperator >>
+<< ret, identifier >>
+<< =, operator >>
+<< =, operator >>
+<< 3, literal >>
+<< ), seperator >>
+<< {, seperator >>
+<< while,keyword >>
+<< (, seperator >>
+<< j, identifier >>
+<< <, operator >>
+<< strlen,keyword >>
+<< (, seperator >>
+<< line, identifier >>
+<< ), seperator >>
+<< &, operator >>
+<< &, operator >>
+<< isLiteral, identifier >>
+<< (, seperator >>
+<< j, identifier >>
+<< ,, seperator >>
+<< j, identifier >>
+<< +, operator >>
+<< 1, literal >>
+<< ,, seperator >>
+<< n, identifier >>
+<< ), seperator >>
+<< =, operator >>
+<< =, operator >>
+<< 3, literal >>
+<< ), seperator >>
+<< {, seperator >>
+<< j, identifier >>
+<< +, operator >>
+<< +, operator >>
+<< ;, seperator >>
+<< }, seperator >>
+<< substring, identifier >>
+<< (, seperator >>
+<< line, identifier >>
+<< ,, seperator >>
+<< i, identifier >>
+<< ,, seperator >>
+<< j, identifier >>
+<< ), seperator >>
+<< ;, seperator >>
+<< i, identifier >>
+<< =, operator >>
+<< j, identifier >>
+<< -, operator >>
+<< 1, literal >>
+<< ;, seperator >>
+<< }, seperator >>
+<< char,keyword >>
+<< buff, identifier >>
+<< [, operator >>
+<< 100, literal >>
+<< ], operator >>
+<< ;, seperator >>
+<< buff, identifier >>
+<< [, operator >>
+<< 0, literal >>
+<< ], operator >>
+<< =, operator >>
+<< '\0', literal >>
+<< ;, seperator >>
+<< strcat,keyword >>
+<< (, seperator >>
+<< buff, identifier >>
+<< ,, seperator >>
+<< "<< ", literal >>
+<< ), seperator >>
+<< ;, seperator >>
+<< strcat,keyword >>
+<< (, seperator >>
+<< buff, identifier >>
+<< ,, seperator >>
+<< subs, identifier >>
+<< ), seperator >>
+<< ;, seperator >>
+<< strcat,keyword >>
+<< (, seperator >>
+<< buff, identifier >>
+<< ,, seperator >>
+<< ", literal >>", literal >>
+<< ), seperator >>
+<< ;, seperator >>
+<< writeToOutput, identifier >>
+<< (, seperator >>
+<< buff, identifier >>
+<< ,, seperator >>
+<< 0, literal >>
+<< ), seperator >>
+<< ;, seperator >>
+<< break,keyword >>
+<< ;, seperator >>
+<< }, seperator >>
+<< else, identifier >>
+<< {, seperator >>
+<< if,keyword >>
+<< (, seperator >>
+<< isOperator, identifier >>
+<< (, seperator >>
+<< j, identifier >>
+<< ,, seperator >>
+<< j, identifier >>
+<< +, operator >>
+<< 1, literal >>
+<< ,, seperator >>
+<< n, identifier >>
+<< ), seperator >>
+<< ||, identifier >>
+<< isseperator, identifier >>
+<< (, seperator >>
+<< j, identifier >>
+<< ,, seperator >>
+<< j, identifier >>
+<< +, operator >>
+<< 1, literal >>
+<< ,, seperator >>
+<< n, identifier >>
+<< ), seperator >>
+<< ||, identifier >>
+<< line, identifier >>
+<< [, operator >>
+<< j, identifier >>
+<< ], operator >>
+<< =, operator >>
+<< =, operator >>
+<< ' ', literal >>
+<< ), seperator >>
+<< {, seperator >>
+<< substring, identifier >>
+<< (, seperator >>
+<< line, identifier >>
+<< ,, seperator >>
+<< i, identifier >>
+<< ,, seperator >>
+<< j, identifier >>
+<< ), seperator >>
+<< ;, seperator >>
+<< char,keyword >>
+<< buff, identifier >>
+<< [, operator >>
+<< 100, literal >>
+<< ], operator >>
+<< ;, seperator >>
+<< buff, identifier >>
+<< [, operator >>
+<< 0, literal >>
+<< ], operator >>
+<< =, operator >>
+<< '\0', literal >>
+<< ;, seperator >>
+<< strcat,keyword >>
+<< (, seperator >>
+<< buff, identifier >>
+<< ,, seperator >>
+<< "<< ", literal >>
+<< ), seperator >>
+<< ;, seperator >>
+<< strcat,keyword >>
+<< (, seperator >>
+<< buff, identifier >>
+<< ,, seperator >>
+<< subs, identifier >>
+<< ), seperator >>
+<< ;, seperator >>
+<< strcat,keyword >>
+<< (, seperator >>
+<< buff, identifier >>
+<< ,, seperator >>
+<< ", identifier >>", literal >>
+<< ), seperator >>
+<< ;, seperator >>
+<< writeToOutput, identifier >>
+<< (, seperator >>
+<< buff, identifier >>
+<< ,, seperator >>
+<< 0, literal >>
+<< ), seperator >>
+<< ;, seperator >>
+<< i, identifier >>
+<< =, operator >>
+<< j, identifier >>
+<< -, operator >>
+<< 1, literal >>
+<< ;, seperator >>
+<< break,keyword >>
+<< ;, seperator >>
+<< }, seperator >>
+<< }, seperator >>
+<< }, seperator >>
+<< }, seperator >>
+<< }, seperator >>
+<< void,keyword >>
+<< main,keyword >>
+<< (, seperator >>
+<< ), seperator >>
+<< {, seperator >>
+<< fin, identifier >>
+<< =, operator >>
+<< fopen,keyword >>
+<< (, seperator >>
+<< "input.txt", literal >>
+<< ,, seperator >>
+<< "r", literal >>
+<< ), seperator >>
+<< ;, seperator >>
+<< fout, identifier >>
+<< =, operator >>
+<< fopen,keyword >>
+<< (, seperator >>
+<< "tokens.txt", literal >>
+<< ,, seperator >>
+<< "w", literal >>
+<< ), seperator >>
+<< ;, seperator >>
+<< fprintf,keyword >>
+<< (, seperator >>
+<< fout, identifier >>
+<< ,, seperator >>
+<< "< CHARACTER(S), TOKEN>\n", literal >>
+<< ), seperator >>
+<< ;, seperator >>
+<< while,keyword >>
+<< (, seperator >>
+<< !, operator >>
+<< feof,keyword >>
+<< (, seperator >>
+<< fin, identifier >>
+<< ), seperator >>
+<< ), seperator >>
+<< {, seperator >>
+<< fgets,keyword >>
+<< (, seperator >>
+<< line, identifier >>
+<< ,, seperator >>
+<< 250, literal >>
+<< ,, seperator >>
+<< fin, identifier >>
+<< ), seperator >>
+<< ;, seperator >>
+<< processLine, identifier >>
+<< (, seperator >>
+<< ), seperator >>
+<< ;, seperator >>
+<< line, identifier >>
+<< [, operator >>
+<< 0, literal >>
+<< ], operator >>
+<< =, operator >>
+<< '\0', literal >>
+<< ;, seperator >>
+<< subs, identifier >>
+<< [, operator >>
+<< 0, literal >>
+<< ], operator >>
+<< =, operator >>
+<< '\0', literal >>
+<< ;, seperator >>
+<< }, seperator >>

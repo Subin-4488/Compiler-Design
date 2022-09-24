@@ -7,13 +7,15 @@ FILE *fin=NULL, *fout=NULL;
 char line[1000];
 char subs[1000];
 
-int kws=18;
-int ops=11;
+int kws=26;
+int ops=13;
 int seps=7;
 int lits=12;
 
-char keywords[][20]={"void", "main", "include", "define", "printf", "scanf", "fgets", "for", "while", "int", "char", "strlen", "FILE", "fopen", "feof", "if", "return", "double"};
-char operators[][20]={"+", "-", "&", "%", "=", "!", "#", ">=", "<=", ">", "<"};
+char keywords[][20]={"void", "main", "include", "define", "printf", "scanf", "fgets", 
+"for", "while", "int", "char", "strlen", "FILE", "fopen", "feof", 
+"if", "return", "double", "continue", "break", "strcmp", "strcat", "fflush", "fscanf", "fprintf", "strcpy"};
+char operators[][20]={"+", "-", "&", "%", "=", "!", "#", ">=", "<=", ">", "<", "[", "]"};
 char seperators[][20]={"{", "}", "(", ")", ";", ",", "\n",};
 char literals[][20]={"\"", "\'", "1","2","3","4","5","6","7","8","9","0"};
 
@@ -36,6 +38,7 @@ void writeToOutput(char res[], int flag){
 		fprintf(fout,"\nError: ");
 		fprintf(fout, "%s", res);
 	}
+	fflush(fout);
 }
 
 int isComment(int start, int end, int n){
@@ -112,7 +115,7 @@ void findTerminatingComment(int start){
 void processLine(){
 	int n=strlen(line);
 	for (int i=0;i<n-1;i++){
-		if (line[i]==' ') continue;
+		if (line[i]==' ' || line[i]=='\t') continue;
 		for (int j=i+1; j<n; j++){
 			int ret=-2; 
 			if ((ret=isComment(i ,j, n))>0){
@@ -209,5 +212,6 @@ void main(){
 		fgets(line, 250, fin);
 		processLine(); 
 		line[0]='\0';
+		subs[0]='\0';
 	}
 }
