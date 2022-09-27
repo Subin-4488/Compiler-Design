@@ -7,7 +7,7 @@
 operator [+*\-&/%=!#\[\]]|(<=)|(>=)|[<>]
 letter [a-zA-Z]
 digit [0-9]
-literal ["]({letter}|{operator}|{digit}|[\\n]|[\\t]|[ ])*["]
+literal (["]({letter}|{operator}|{digit}|[\\n]|[\\t]|[ ])*["])|{digit}+
 identifier ({letter}|_)({letter}|_|{digit})*
 
 %%
