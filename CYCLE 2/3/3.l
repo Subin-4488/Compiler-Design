@@ -4,7 +4,7 @@
     #include <string.h>
 %}
 
-st ([d-z0-9]*(abc)*[d-z0-9]*)*
+st ([a-z0-9]*(abc)*[a-z0-9]*)*
 
 %%
 

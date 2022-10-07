@@ -18,9 +18,7 @@ identifier ({letter}|_)({letter}|_|{digit})*
 
 "{"|"}"|"("|")"|";"|"," {printf("%s, seperator\n",yytext);}
 
-"1","2","3","4","5","6","7","8","9","0" {printf("%s, literal\n",yytext);}
-
-{literal} {printf("%s, literal\n", yytext);}
+{literal} {printf("%s, literal\n",yytext);}
 
 {identifier} {printf("%s, identifier\n", yytext);}
 
