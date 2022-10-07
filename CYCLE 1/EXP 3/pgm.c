@@ -13,6 +13,7 @@ struct child
 
 struct node
 {
+    int finalStateFlag;
     char id;
     int links;
     struct child *childs;
@@ -84,13 +85,16 @@ void collectNfa()
 {
     printf("Enter the no of states in the NFA:\n");
     scanf("%d", &n);
+    getchar();
 
     g = (struct node *)malloc(sizeof(struct node) * n);
 
-    printf("Enter name(id) of each state starting from the start-state: \n");
     for (int i = 0; i < n; i++)
     {
-        scanf(" %c", &g[i].id);
+        printf("Enter name(id) of state %d: \n",i+1);
+        scanf("%c", &g[i].id);  getchar();  
+        printf("Press 1 if the state %c is final, otherwise 0:\n",g[i].id);
+        scanf("%d",&g[i].finalStateFlag);  getchar();
     }
 
     for (int i = 0; i < n; i++)
@@ -222,6 +226,18 @@ void convert()
             printf("}\n");
         }
     }
+    printf("\nFinal states:\n");
+    for (int i=0; i<n; i++){
+        if (!g[i].finalStateFlag)
+            printf("%c ",g[i].id);
+    }
+
+    printf("\nNon Final states:\n");
+    for (int i=0; i<n; i++){
+        if (g[i].finalStateFlag)
+            printf("%c ",g[i].id);
+    }
+    printf("\n");
 }
 
 void main()
