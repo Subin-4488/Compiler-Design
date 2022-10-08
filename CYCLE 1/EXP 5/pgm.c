@@ -19,8 +19,25 @@ struct node
 
 } * g;
 
+struct table{
+    char state;
+    char arr[20][2];
+    int len;
+
+}tab[20]; int size=0;
+
 char transitionSet[10];
 int t = 0;
+
+int newTransition(int transition)
+{
+    for (int i = 0; i < t; i++)
+    {
+        if (transitionSet[i] == transition)
+            return 0;
+    }
+    return 1;
+}
 
 void collectDFA()
 {
@@ -49,9 +66,122 @@ void collectDFA()
         for (int j = 0; j < g[i].links; j++)
         {
             scanf(" %c %c", &g[i].childs[j].id, &g[i].childs[j].cost);
-            if (g[i].childs[j].cost != 'E' && newTransition(g[i].childs[j].cost))
+            if (newTransition(g[i].childs[j].cost))
             {
                 transitionSet[t++] = g[i].childs[j].cost;
+            }
+        }
+    }
+}
+
+void prepareTable(){
+    for (int i=0; i<n-1; i++){
+        tab[size].state=g[i].id;
+        tab[size].len=0;
+        for (int j=i+1; j<n; j++){
+            if (g[i].finalStateFlag ^ g[j].finalStateFlag){
+                tab[size].arr[tab[size].len][0]=g[j].id;
+                tab[size].arr[tab[size].len][1]='Y';
+            }
+            else{
+                tab[size].arr[tab[size].len][0]=g[j].id;
+                tab[size].arr[tab[size].len][1]='N';
+            }
+            tab[size].len++;
+        }
+        size++;
+    }
+}
+
+char getTransition(char state, char edge)
+{
+    char arr;
+
+        for (int i = 0; i < n; i++)
+        {
+            if (g[i].id == state)
+            {
+                for (int j = 0; j < g[i].links; j++)
+                {
+                    if (g[i].childs[j].cost == edge){
+                        arr=g[i].childs[j].id;
+                        return arr;
+                    }
+                }
+            }
+        }
+
+    return arr;
+}
+
+int alreadyMarked(char c1, char c2){
+
+    for (int i=0; i<size; i++){
+        if (tab[i].state==c1){
+            for (int j=0; j<tab[i].len; j++){
+                if (tab[i].arr[j][0]==c2){
+                    if (tab[i].arr[j][1]=='Y')
+                        return 1;
+                    else
+                        break;
+                }
+            }
+        }
+        if (tab[i].state==c2){
+            for (int j=0; j<tab[i].len; j++){
+                if (tab[i].arr[j][0]==c1){
+                    if (tab[i].arr[j][1]=='Y')
+                        return 1;
+                    else
+                        break;
+                }
+            }
+        }
+    }
+    
+    return 0;
+}
+
+void debugPrintTable(){
+    for (int i=0; i<size; i++){
+        printf("%c: \n",tab[i].state);
+        for (int j=0; j<tab[i].len; j++){
+            printf("%c %c\n",tab[i].arr[j][0], tab[i].arr[j][1]);
+        }
+    }
+}
+
+void myhillNerode(){
+    prepareTable();
+
+    int c=0;
+    while (c++ < 20)
+    {
+        for (int i = 0; i < size; i++)
+        {
+            for (int j = 0; j < tab[i].len; j++)
+            {
+                if (tab[i].arr[j][1] == 'N')
+                { // unmarked pair
+                    for (int k = 0; k < t; k++)
+                    {
+                        char c1 = getTransition(tab[i].state, transitionSet[k]);
+                        char c2 = getTransition(tab[i].arr[j][0], transitionSet[k]);
+                        if (alreadyMarked(c1, c2))
+                        {
+                            tab[i].arr[j][1] = 'Y';
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    printf("According to MYHILL_NERODE THEORM, the given DFA can be minimized by combining the following states:\n");
+    for (int i=0; i<size; i++){
+        for (int j=0; j<tab[i].len; j++){
+            if (tab[i].arr[j][1]=='N'){
+                printf("{%c and %c}\n", tab[i].state, tab[i].arr[j][0]);
             }
         }
     }
@@ -61,4 +191,5 @@ void main(){
     printf("***Program to minimize a given DFA***\n\n");
 
     collectDFA();
+    myhillNerode();
 }
