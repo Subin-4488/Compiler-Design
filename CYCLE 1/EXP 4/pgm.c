@@ -187,7 +187,7 @@ void visit(char arr[], int n)
 void convert()
 {
     char temp[20];
-    temp[0] = g[0].id;
+    temp[0] = g[0].id;  temp[1]='\0';
     visit(temp, 1);
     enqueue(temp, 1);
 
@@ -206,19 +206,6 @@ void convert()
             }
             showOutput(ptr, ssize, transitionSet[i], q, tmp);
         }
-    }
-}
-
-void debug()
-{
-    for (int i = 0; i < n; i++)
-    {
-        printf("%c: ", g[i].id);
-        for (int j = 0; j < g[i].links; j++)
-        {
-            printf("%c%c ", g[i].childs[j].id, g[i].childs[j].cost);
-        }
-        printf("\n");
     }
 }
 
