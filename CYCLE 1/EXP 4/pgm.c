@@ -222,6 +222,17 @@ void debug()
     }
 }
 
+int isFinal(char ch){
+    for (int i=0; i<n; i++){
+        if (g[i].id==ch){
+            if (g[i].finalStateFlag)
+                return 1;
+            else
+                return 0;
+        }
+    }
+}
+
 void main()
 {
     printf("***Program to convert NFA(non epsillon) to DFA***\n\n");
@@ -230,4 +241,29 @@ void main()
 
     printf("Resultant DFA:\n");
     convert();
+
+    printf("\n Final states:\n");
+    for (int i=0; i<rs; i++){
+        for (int j=0; j<res[i].size; j++){
+            if (isFinal(res[i].ress[j])){
+                printf("%s\n", res[i].ress);
+                break;
+            }
+        }
+    }
+
+    printf("\nNon Final states:\n");
+
+    int flag=1;
+    for (int i=0; i<rs; i++){
+        flag=1;
+        for (int j=0; j<res[i].size; j++){
+            if (isFinal(res[i].ress[j])){
+                flag=0;
+                break;
+            }
+        }
+        if (flag)
+            printf("%s\n",res[i].ress);
+    }
 }
