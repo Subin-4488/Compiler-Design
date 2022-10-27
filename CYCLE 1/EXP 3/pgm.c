@@ -228,16 +228,21 @@ void convert()
     }
     printf("\nFinal states:\n");
     for (int i=0; i<n; i++){
-        if (!g[i].finalStateFlag)
-            printf("%c ",g[i].id);
+    	int flag=0;
+    	for (int j=0; j<closure[i].childCount; j++){
+    		for (int k=0; k<n; k++){
+    			if (closure[i].states[j] == g[k].id && g[k].finalStateFlag==1){
+    				flag=1;
+    				break;
+    			}
+    		}
+        	if (flag){
+	            	printf("%c ",g[i].id);
+	            	break;
+            	}
+        }
     }
 
-    printf("\nNon Final states:\n");
-    for (int i=0; i<n; i++){
-        if (g[i].finalStateFlag)
-            printf("%c ",g[i].id);
-    }
-    printf("\n");
 }
 
 void main()

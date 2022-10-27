@@ -114,7 +114,9 @@ void findTerminatingComment(int start){
 
 void processLine(){
 	int n=strlen(line);
+	int invalid=0;
 	for (int i=0;i<n-1;i++){
+		invalid=0;
 		if (line[i]==' ' || line[i]=='\t') continue;
 		for (int j=i+1; j<n; j++){
 			int ret=-2; 
@@ -174,14 +176,21 @@ void processLine(){
 					}
 				}
 				else if(ret==3){
-					while (j<strlen(line) && isLiteral(j,j+1,n)==3){
+					while (j<strlen(line) && !isOperator(j, j + 1, n) && !isseperator(j, j + 1, n) && line[j] != ' '){
+						if (isLiteral(j,j+1,n)!=3)
+							invalid=1;
 						j++;
 					}
 					substring(line, i,j);
 					i=j-1;
 				}
 				char buff[100]; buff[0]='\0';
-				strcat(buff, "<< "); strcat(buff,subs); strcat(buff,", literal >>");
+				if (!invalid){
+					strcat(buff, "<< "); strcat(buff,subs); strcat(buff,", literal >>");
+				}
+				else{
+					strcat(buff, "<< "); strcat(buff,subs); strcat(buff,", Invalid Identifier >>");
+				}
 				writeToOutput(buff, 0);
 				break;
 			}
@@ -208,7 +217,9 @@ void main(){
 	fin=fopen("input.txt", "r");
 	fout=fopen("tokens.txt", "w");
 	fprintf(fout, "< CHARACTER(S), TOKEN>\n");
+	int k=1;
 	while (!feof(fin)){
+		fprintf(fout, "\n\nLINE NO: %d",k++);
 		fgets(line, 250, fin);
 		processLine(); 
 		line[0]='\0';
