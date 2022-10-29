@@ -15,6 +15,12 @@ struct first{
 } f[20];
 int fn=0;
 
+struct follow{
+    char var;
+    char values[25];
+} fl[20];
+int fln=0;
+
 struct queue{
 	char que[50];
 	int f,l;
@@ -56,7 +62,7 @@ int isPresent(char ch){
 
 void collectGrammer(){
 
-	printf("Enter the variables without space:\n");
+	printf("Enter the variables starting from START_SYMBOL without space:\n");
 	scanf("%s", var);
 	vn=(int )strlen(var);
 	
@@ -109,8 +115,30 @@ void addItemToFirst(char symbol, char value){
 	
 }
 
-void display(char ch, int i){
-        printf("%c %s\n", f[i].var, f[i].values);
+void addItemToFollow(char symbol, char value){
+	for (int i=0; i<fln; i++){
+		if (fl[i].var == symbol){
+            for (int j=0; j<strlen(fl[i].values); j++){
+                if (fl[i].values[j]==value)
+                    return;
+            }
+			fl[i].values[strlen(fl[i].values)]=value;
+			return ;
+		}
+	}
+	fl[fln].var = symbol;
+	fl[fln].values[strlen(fl[fln].values)]=value;
+	fln++;
+	
+}
+
+void displayFirst(int i){
+        printf("%c: %s\n", f[i].var, f[i].values);
+}
+
+void displayFollow(){
+	for (int i=0; i<fln; i++)
+        printf("%c: %s\n", fl[i].var, fl[i].values);
 }
 
 char first(char main, char symbol){
@@ -120,7 +148,7 @@ char first(char main, char symbol){
 			for (int j=0; j<strlen(p[i].RHS); j++){
                 if (p[i].RHS[j]=='E')
                     return 'E';
-				if (!isVariable(p[i].RHS[j])){
+				if (isTerminal(p[i].RHS[j])){
                     addItemToFirst(main, p[i].RHS[j]);
                     break;
 				}
@@ -130,15 +158,84 @@ char first(char main, char symbol){
                         if(j<strlen(p[i].RHS)-1)
                             continue;
                         else{
-                            addItemToFirst(main, 'E');
-                            break;
+                            if (main==symbol)
+                                addItemToFirst(main, 'E');
+                            else
+                                return 'E';
                         }
 					}
-                    return ' ';
+					else
+						break;
 				}
 			}
 		}
 	}
+}
+
+char *getFirst(char symbol){
+
+    for (int i=0; i<vn; i++){
+        if (f[i].var == symbol){
+            return f[i].values;
+        }
+    }
+    return NULL;
+}
+
+char *getFollow(char symbol){
+    for (int i=0; i<fln; i++){
+        if (fl[i].var == symbol){
+            return fl[i].values;
+        }
+    }
+    return NULL;
+}
+
+char follow(char symbol){
+    for (int i=0; i<n; i++){
+        for (int j=0; j<strlen(p[i].RHS); j++){
+            if (p[i].RHS[j] == symbol){
+                char *arr=getFollow(p[i].LHS);
+                if (j==strlen(p[i].RHS)-1){
+                    for (int k=0; k<strlen(arr); k++)   addItemToFollow(symbol, arr[k]);
+                }
+				else
+				{
+					for (int k = j + 1; k < strlen(p[i].RHS); k++)
+					{
+						if (isTerminal(p[i].RHS[k]))
+						{
+							addItemToFollow(symbol, p[i].RHS[k]);
+							break;
+						}
+						else
+						{
+							char *a = getFirst(p[i].RHS[k]);
+							for (int ii = 0; ii < strlen(a); ii++)
+							{
+								if (a[ii] == 'E')
+								{
+									if (k == strlen(p[i].RHS) - 1)
+									{
+										if (arr!=NULL){
+											for (int kk = 0; kk < strlen(arr); kk++)
+												addItemToFollow(symbol, arr[kk]);
+										}
+									}
+									else
+										break;
+								}
+								else if (isTerminal(a[ii]))
+								{
+									addItemToFollow(symbol, a[ii]);
+								}
+							}
+						}
+					}
+				}
+            }
+        }
+    }
 }
 
 void main(){
@@ -148,14 +245,18 @@ void main(){
 	for (int i=0; i<vn; i++){
 		char c=first(var[i], var[i]);
         addItemToFirst(var[i], c);
-        display(var[i], i);
+        displayFirst(i);
         fflush(stdout);
 	}
 
     printf("\nFOLLOW: \n");
-	for (int i=0; i<vn; i++){
-		
-        display(var[i], i);
+	int c=0;
+	for (int i=0; i<3*vn; i++){
+		follow(var[i%vn]);
+        if (i==0){
+            addItemToFollow(var[i%vn], '$');
+        }
         fflush(stdout);
 	}
+	displayFollow();
 }

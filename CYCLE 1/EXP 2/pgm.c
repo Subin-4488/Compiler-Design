@@ -77,7 +77,15 @@ void main(){
             closure[p].id = g[i].id;
             s=0;
             while (!isEmpty()){
+                  int fl=0;
                   char ch=dequeue();
+                  for (int i=0; i<closure[p].childCount; i++){
+                        if (closure[p].states[i]==ch){
+                              fl=1;
+                              break;
+                        }
+                  }
+                  if (fl) continue;
                   closure[p].states[s++]=ch;
                   closure[p].childCount++;
                   int flag=0;
