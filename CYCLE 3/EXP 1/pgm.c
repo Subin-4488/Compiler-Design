@@ -52,14 +52,6 @@ int isEmpty(){
 	return 0;
 }
 
-int isPresent(char ch){
-	for (int i=q.f; i<q.l; i++){
-		if (q.que[i]==ch)
-			return 1;
-		return 0;
-	}
-}
-
 void collectGrammer(){
 
 	printf("Enter the variables starting from START_SYMBOL without space:\n");
@@ -132,7 +124,8 @@ void addItemToFollow(char symbol, char value){
 	
 }
 
-void displayFirst(int i){
+void displayFirst(){
+	for (int i=0; i<fn; i++)
         printf("%c: %s\n", f[i].var, f[i].values);
 }
 
@@ -148,7 +141,7 @@ char first(char main, char symbol){
 			for (int j=0; j<strlen(p[i].RHS); j++){
                 if (p[i].RHS[j]=='E')
                     return 'E';
-				if (isTerminal(p[i].RHS[j])){
+				else if (isTerminal(p[i].RHS[j])){
                     addItemToFirst(main, p[i].RHS[j]);
                     break;
 				}
@@ -174,7 +167,7 @@ char first(char main, char symbol){
 
 char *getFirst(char symbol){
 
-    for (int i=0; i<vn; i++){
+    for (int i=0; i<fn; i++){
         if (f[i].var == symbol){
             return f[i].values;
         }
@@ -197,26 +190,20 @@ char follow(char symbol){
             if (p[i].RHS[j] == symbol){
                 char *arr=getFollow(p[i].LHS);
                 if (j==strlen(p[i].RHS)-1){
-                    for (int k=0; k<strlen(arr); k++)   addItemToFollow(symbol, arr[k]);
+                    for (int k=0; k<strlen(arr); k++)   
+						addItemToFollow(symbol, arr[k]);
                 }
-				else
-				{
-					for (int k = j + 1; k < strlen(p[i].RHS); k++)
-					{
-						if (isTerminal(p[i].RHS[k]))
-						{
+				else{
+					for (int k=j+1; k<strlen(p[i].RHS); k++){
+						if (isTerminal(p[i].RHS[k])){
 							addItemToFollow(symbol, p[i].RHS[k]);
 							break;
 						}
-						else
-						{
+						else{
 							char *a = getFirst(p[i].RHS[k]);
-							for (int ii = 0; ii < strlen(a); ii++)
-							{
-								if (a[ii] == 'E')
-								{
-									if (k == strlen(p[i].RHS) - 1)
-									{
+							for (int ii = 0; ii < strlen(a); ii++){
+								if (a[ii] == 'E'){
+									if (k == strlen(p[i].RHS) - 1){
 										if (arr!=NULL){
 											for (int kk = 0; kk < strlen(arr); kk++)
 												addItemToFollow(symbol, arr[kk]);
@@ -225,8 +212,7 @@ char follow(char symbol){
 									else
 										break;
 								}
-								else if (isTerminal(a[ii]))
-								{
+								else if (isTerminal(a[ii])){
 									addItemToFollow(symbol, a[ii]);
 								}
 							}
@@ -245,9 +231,9 @@ void main(){
 	for (int i=0; i<vn; i++){
 		char c=first(var[i], var[i]);
         addItemToFirst(var[i], c);
-        displayFirst(i);
         fflush(stdout);
 	}
+	displayFirst();
 
     printf("\nFOLLOW: \n");
 	int c=0;
