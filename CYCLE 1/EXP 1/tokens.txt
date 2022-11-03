@@ -1,25 +1,37 @@
 < CHARACTER(S), TOKEN>
 
+
+LINE NO: 1
 << #, operator >>
 << include,keyword >>
 << <, operator >>
 << stdio.h, identifier >>
 << >, operator >>
+
+LINE NO: 2
 << #, operator >>
 << include,keyword >>
 << <, operator >>
 << string.h, identifier >>
 << >, operator >>
+
+LINE NO: 3
 << #, operator >>
 << include,keyword >>
 << <, operator >>
 << stdlib.h, identifier >>
 << >, operator >>
+
+LINE NO: 4
 << #, operator >>
 << include,keyword >>
 << <, operator >>
 << unistd.h, identifier >>
 << >, operator >>
+
+LINE NO: 5
+
+LINE NO: 6
 << FILE,keyword >>
 << *fin, identifier >>
 << =, operator >>
@@ -29,38 +41,56 @@
 << =, operator >>
 << NULL,keyword >>
 << ;, seperator >>
+
+LINE NO: 7
 << char,keyword >>
 << line, identifier >>
 << [, operator >>
 << 1000, literal >>
 << ], operator >>
 << ;, seperator >>
+
+LINE NO: 8
 << char,keyword >>
 << subs, identifier >>
 << [, operator >>
 << 1000, literal >>
 << ], operator >>
 << ;, seperator >>
+
+LINE NO: 9
+
+LINE NO: 10
 << int,keyword >>
 << kws, identifier >>
 << =, operator >>
-<< 26, literal >>
+<< 27, literal >>
 << ;, seperator >>
+
+LINE NO: 11
 << int,keyword >>
 << ops, identifier >>
 << =, operator >>
 << 13, literal >>
 << ;, seperator >>
+
+LINE NO: 12
 << int,keyword >>
 << seps, identifier >>
 << =, operator >>
 << 7, literal >>
 << ;, seperator >>
+
+LINE NO: 13
 << int,keyword >>
 << lits, identifier >>
 << =, operator >>
 << 12, literal >>
 << ;, seperator >>
+
+LINE NO: 14
+
+LINE NO: 15
 << char,keyword >>
 << keywords, identifier >>
 << [, operator >>
@@ -84,6 +114,8 @@
 << ,, seperator >>
 << "fgets", literal >>
 << ,, seperator >>
+
+LINE NO: 16
 << "for", literal >>
 << ,, seperator >>
 << "while", literal >>
@@ -100,6 +132,10 @@
 << ,, seperator >>
 << "feof", literal >>
 << ,, seperator >>
+<< "NULL", literal >>
+<< ,, seperator >>
+
+LINE NO: 17
 << "if", literal >>
 << ,, seperator >>
 << "return", literal >>
@@ -123,6 +159,8 @@
 << "strcpy", literal >>
 << }, seperator >>
 << ;, seperator >>
+
+LINE NO: 18
 << char,keyword >>
 << operators, identifier >>
 << [, operator >>
@@ -159,6 +197,8 @@
 << "]", literal >>
 << }, seperator >>
 << ;, seperator >>
+
+LINE NO: 19
 << char,keyword >>
 << seperators, identifier >>
 << [, operator >>
@@ -184,6 +224,8 @@
 << ,, seperator >>
 << }, seperator >>
 << ;, seperator >>
+
+LINE NO: 20
 << char,keyword >>
 << literals, identifier >>
 << [, operator >>
@@ -218,6 +260,10 @@
 << "0", literal >>
 << }, seperator >>
 << ;, seperator >>
+
+LINE NO: 21
+
+LINE NO: 22
 << char,keyword >>
 << ids, identifier >>
 << [, operator >>
@@ -232,6 +278,10 @@
 << =, operator >>
 << 0, literal >>
 << ;, seperator >>
+
+LINE NO: 23
+
+LINE NO: 24
 << void,keyword >>
 << substring, identifier >>
 << (, seperator >>
@@ -247,6 +297,8 @@
 << l, identifier >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 25
 << int,keyword >>
 << n, identifier >>
 << =, operator >>
@@ -255,6 +307,8 @@
 << str, identifier >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 26
 << subs, identifier >>
 << [, operator >>
 << 0, literal >>
@@ -262,11 +316,15 @@
 << =, operator >>
 << '\0', literal >>
 << ;, seperator >>
+
+LINE NO: 27
 << int,keyword >>
 << k, identifier >>
 << =, operator >>
 << 0, literal >>
 << ;, seperator >>
+
+LINE NO: 28
 << for,keyword >>
 << (, seperator >>
 << int,keyword >>
@@ -282,6 +340,8 @@
 << +, operator >>
 << +, operator >>
 << ), seperator >>
+
+LINE NO: 29
 << subs, identifier >>
 << [, operator >>
 << k, identifier >>
@@ -294,6 +354,8 @@
 << i, identifier >>
 << ], operator >>
 << ;, seperator >>
+
+LINE NO: 30
 << subs, identifier >>
 << [, operator >>
 << k, identifier >>
@@ -301,9 +363,17 @@
 << =, operator >>
 << '\0', literal >>
 << ;, seperator >>
+
+LINE NO: 31
 << return,keyword >>
 << ;, seperator >>
+
+LINE NO: 32
 << }, seperator >>
+
+LINE NO: 33
+
+LINE NO: 34
 << void,keyword >>
 << writeToOutput, identifier >>
 << (, seperator >>
@@ -316,11 +386,15 @@
 << flag, identifier >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 35
 << if,keyword >>
 << (, seperator >>
 << !, operator >>
 << flag, identifier >>
 << ), seperator >>
+
+LINE NO: 36
 << fprintf,keyword >>
 << (, seperator >>
 << fout, identifier >>
@@ -330,8 +404,12 @@
 << res, identifier >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 37
 << else, identifier >>
 << {, seperator >>
+
+LINE NO: 38
 << fprintf,keyword >>
 << (, seperator >>
 << fout, identifier >>
@@ -339,6 +417,8 @@
 << "\nError: ", literal >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 39
 << fprintf,keyword >>
 << (, seperator >>
 << fout, identifier >>
@@ -348,13 +428,23 @@
 << res, identifier >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 40
 << }, seperator >>
+
+LINE NO: 41
 << fflush,keyword >>
 << (, seperator >>
 << fout, identifier >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 42
 << }, seperator >>
+
+LINE NO: 43
+
+LINE NO: 44
 << int,keyword >>
 << isComment, identifier >>
 << (, seperator >>
@@ -368,6 +458,8 @@
 << n, identifier >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 45
 << substring, identifier >>
 << (, seperator >>
 << line, identifier >>
@@ -379,6 +471,8 @@
 << start, identifier >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 46
 << if,keyword >>
 << (, seperator >>
 << !, operator >>
@@ -392,6 +486,8 @@
 << return,keyword >>
 << 1, literal >>
 << ;, seperator >>
+
+LINE NO: 47
 << else, identifier >>
 << if,keyword >>
 << (, seperator >>
@@ -406,6 +502,8 @@
 << return,keyword >>
 << 2, literal >>
 << ;, seperator >>
+
+LINE NO: 48
 << else, identifier >>
 << if,keyword >>
 << (, seperator >>
@@ -421,11 +519,19 @@
 << -, operator >>
 << 1, literal >>
 << ;, seperator >>
+
+LINE NO: 49
 << else, identifier >>
 << return,keyword >>
 << 0, literal >>
 << ;, seperator >>
+
+LINE NO: 50
 << }, seperator >>
+
+LINE NO: 51
+
+LINE NO: 52
 << int,keyword >>
 << isKeyword, identifier >>
 << (, seperator >>
@@ -439,6 +545,8 @@
 << n, identifier >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 53
 << substring, identifier >>
 << (, seperator >>
 << line, identifier >>
@@ -448,6 +556,8 @@
 << end, identifier >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 54
 << for,keyword >>
 << (, seperator >>
 << int,keyword >>
@@ -464,6 +574,8 @@
 << +, operator >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 55
 << if,keyword >>
 << (, seperator >>
 << !, operator >>
@@ -477,14 +589,26 @@
 << ], operator >>
 << ), seperator >>
 << ), seperator >>
+
+LINE NO: 56
 << return,keyword >>
 << 1, literal >>
 << ;, seperator >>
+
+LINE NO: 57
 << }, seperator >>
+
+LINE NO: 58
 << return,keyword >>
 << 0, literal >>
 << ;, seperator >>
+
+LINE NO: 59
 << }, seperator >>
+
+LINE NO: 60
+
+LINE NO: 61
 << int,keyword >>
 << isOperator, identifier >>
 << (, seperator >>
@@ -498,6 +622,8 @@
 << n, identifier >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 62
 << substring, identifier >>
 << (, seperator >>
 << line, identifier >>
@@ -507,6 +633,8 @@
 << end, identifier >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 63
 << for,keyword >>
 << (, seperator >>
 << int,keyword >>
@@ -523,6 +651,8 @@
 << +, operator >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 64
 << if,keyword >>
 << (, seperator >>
 << !, operator >>
@@ -537,6 +667,8 @@
 << ), seperator >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 65
 << substring, identifier >>
 << (, seperator >>
 << line, identifier >>
@@ -548,6 +680,8 @@
 << 1, literal >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 66
 << for,keyword >>
 << (, seperator >>
 << int,keyword >>
@@ -564,6 +698,8 @@
 << +, operator >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 67
 << if,keyword >>
 << (, seperator >>
 << !, operator >>
@@ -577,10 +713,16 @@
 << ], operator >>
 << ), seperator >>
 << ), seperator >>
+
+LINE NO: 68
 << return,keyword >>
 << 1, literal >>
 << ;, seperator >>
+
+LINE NO: 69
 << }, seperator >>
+
+LINE NO: 70
 << substring, identifier >>
 << (, seperator >>
 << line, identifier >>
@@ -590,15 +732,29 @@
 << end, identifier >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 71
 << return,keyword >>
 << 1, literal >>
 << ;, seperator >>
+
+LINE NO: 72
 << }, seperator >>
+
+LINE NO: 73
 << }, seperator >>
+
+LINE NO: 74
 << return,keyword >>
 << 0, literal >>
 << ;, seperator >>
+
+LINE NO: 75
 << }, seperator >>
+
+LINE NO: 76
+
+LINE NO: 77
 << int,keyword >>
 << isseperator, identifier >>
 << (, seperator >>
@@ -612,6 +768,8 @@
 << n, identifier >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 78
 << substring, identifier >>
 << (, seperator >>
 << line, identifier >>
@@ -621,6 +779,8 @@
 << end, identifier >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 79
 << for,keyword >>
 << (, seperator >>
 << int,keyword >>
@@ -637,6 +797,8 @@
 << +, operator >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 80
 << if,keyword >>
 << (, seperator >>
 << !, operator >>
@@ -650,14 +812,26 @@
 << ], operator >>
 << ), seperator >>
 << ), seperator >>
+
+LINE NO: 81
 << return,keyword >>
 << 1, literal >>
 << ;, seperator >>
+
+LINE NO: 82
 << }, seperator >>
+
+LINE NO: 83
 << return,keyword >>
 << 0, literal >>
 << ;, seperator >>
+
+LINE NO: 84
 << }, seperator >>
+
+LINE NO: 85
+
+LINE NO: 86
 << int,keyword >>
 << isLiteral, identifier >>
 << (, seperator >>
@@ -671,6 +845,8 @@
 << n, identifier >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 87
 << substring, identifier >>
 << (, seperator >>
 << line, identifier >>
@@ -682,6 +858,8 @@
 << start, identifier >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 88
 << for,keyword >>
 << (, seperator >>
 << int,keyword >>
@@ -698,6 +876,8 @@
 << +, operator >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 89
 << if,keyword >>
 << (, seperator >>
 << !, operator >>
@@ -712,6 +892,8 @@
 << ), seperator >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 90
 << if,keyword >>
 << (, seperator >>
 << !, operator >>
@@ -723,9 +905,13 @@
 << ", literal >>
 << ), seperator >>
 << ), seperator >>
+
+LINE NO: 91
 << return,keyword >>
 << 1, literal >>
 << ;, seperator >>
+
+LINE NO: 92
 << else, identifier >>
 << if,keyword >>
 << (, seperator >>
@@ -737,19 +923,39 @@
 << "\'", literal >>
 << ), seperator >>
 << ), seperator >>
+
+LINE NO: 93
 << return,keyword >>
 << 2, literal >>
 << ;, seperator >>
+
+LINE NO: 94
 << else, identifier >>
+
+LINE NO: 95
 << return,keyword >>
 << 3, literal >>
 << ;, seperator >>
+
+LINE NO: 96
 << }, seperator >>
+
+LINE NO: 97
 << }, seperator >>
+
+LINE NO: 98
+
+LINE NO: 99
 << return,keyword >>
 << 0, literal >>
 << ;, seperator >>
+
+LINE NO: 100
 << }, seperator >>
+
+LINE NO: 101
+
+LINE NO: 102
 << void,keyword >>
 << findTerminatingComment, identifier >>
 << (, seperator >>
@@ -757,11 +963,15 @@
 << start, identifier >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 103
 << while,keyword >>
 << (, seperator >>
 << 1, literal >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 104
 << for,keyword >>
 << (, seperator >>
 << int,keyword >>
@@ -783,6 +993,8 @@
 << +, operator >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 105
 << if,keyword >>
 << (, seperator >>
 << line, identifier >>
@@ -805,6 +1017,8 @@
 << '/', literal >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 106
 << line, identifier >>
 << [, operator >>
 << 0, literal >>
@@ -812,10 +1026,18 @@
 << =, operator >>
 << '\0', literal >>
 << ;, seperator >>
+
+LINE NO: 107
 << return,keyword >>
 << ;, seperator >>
+
+LINE NO: 108
 << }, seperator >>
+
+LINE NO: 109
 << }, seperator >>
+
+LINE NO: 110
 << fgets,keyword >>
 << (, seperator >>
 << line, identifier >>
@@ -825,17 +1047,29 @@
 << fin, identifier >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 111
 << start, identifier >>
 << =, operator >>
 << 0, literal >>
 << ;, seperator >>
+
+LINE NO: 112
 << }, seperator >>
+
+LINE NO: 113
 << }, seperator >>
+
+LINE NO: 114
+
+LINE NO: 115
 << void,keyword >>
 << processLine, identifier >>
 << (, seperator >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 116
 << int,keyword >>
 << n, identifier >>
 << =, operator >>
@@ -844,6 +1078,15 @@
 << line, identifier >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 117
+<< int,keyword >>
+<< invalid, identifier >>
+<< =, operator >>
+<< 0, literal >>
+<< ;, seperator >>
+
+LINE NO: 118
 << for,keyword >>
 << (, seperator >>
 << int,keyword >>
@@ -862,6 +1105,14 @@
 << +, operator >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 119
+<< invalid, identifier >>
+<< =, operator >>
+<< 0, literal >>
+<< ;, seperator >>
+
+LINE NO: 120
 << if,keyword >>
 << (, seperator >>
 << line, identifier >>
@@ -882,6 +1133,8 @@
 << ), seperator >>
 << continue,keyword >>
 << ;, seperator >>
+
+LINE NO: 121
 << for,keyword >>
 << (, seperator >>
 << int,keyword >>
@@ -900,12 +1153,16 @@
 << +, operator >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 122
 << int,keyword >>
 << ret, identifier >>
 << =, operator >>
 << -, operator >>
 << 2, literal >>
 << ;, seperator >>
+
+LINE NO: 123
 << if,keyword >>
 << (, seperator >>
 << (, seperator >>
@@ -924,6 +1181,8 @@
 << 0, literal >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 124
 << if,keyword >>
 << (, seperator >>
 << ret, identifier >>
@@ -932,20 +1191,36 @@
 << 1, literal >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 125
 << return,keyword >>
 << ;, seperator >>
+
+LINE NO: 126
 << }, seperator >>
+
+LINE NO: 127
 << else, identifier >>
 << {, seperator >>
+
+LINE NO: 128
 << findTerminatingComment, identifier >>
 << (, seperator >>
 << i, identifier >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 129
 << return,keyword >>
 << ;, seperator >>
+
+LINE NO: 130
 << }, seperator >>
+
+LINE NO: 131
 << }, seperator >>
+
+LINE NO: 132
 << else, identifier >>
 << if,keyword >>
 << (, seperator >>
@@ -956,6 +1231,10 @@
 << 1, literal >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 133
+
+LINE NO: 134
 << writeToOutput, identifier >>
 << (, seperator >>
 << "/", literal >>
@@ -963,7 +1242,11 @@
 << 1, literal >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 135
 << }, seperator >>
+
+LINE NO: 136
 << else, identifier >>
 << if,keyword >>
 << (, seperator >>
@@ -983,6 +1266,8 @@
 << 0, literal >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 137
 << char,keyword >>
 << buff, identifier >>
 << [, operator >>
@@ -996,6 +1281,8 @@
 << =, operator >>
 << '\0', literal >>
 << ;, seperator >>
+
+LINE NO: 138
 << strcat,keyword >>
 << (, seperator >>
 << buff, identifier >>
@@ -1017,6 +1304,8 @@
 << ", operator >>", literal >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 139
 << writeToOutput, identifier >>
 << (, seperator >>
 << buff, identifier >>
@@ -1024,15 +1313,23 @@
 << 0, literal >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 140
 << i, identifier >>
 << =, operator >>
 << j, identifier >>
 << -, operator >>
 << 1, literal >>
 << ;, seperator >>
+
+LINE NO: 141
 << break,keyword >>
 << ;, seperator >>
+
+LINE NO: 142
 << }, seperator >>
+
+LINE NO: 143
 << else, identifier >>
 << if,keyword >>
 << (, seperator >>
@@ -1052,6 +1349,8 @@
 << 0, literal >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 144
 << char,keyword >>
 << buff, identifier >>
 << [, operator >>
@@ -1065,6 +1364,8 @@
 << =, operator >>
 << '\0', literal >>
 << ;, seperator >>
+
+LINE NO: 145
 << strcat,keyword >>
 << (, seperator >>
 << buff, identifier >>
@@ -1086,6 +1387,8 @@
 << ",keyword >>", literal >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 146
 << writeToOutput, identifier >>
 << (, seperator >>
 << buff, identifier >>
@@ -1093,15 +1396,23 @@
 << 0, literal >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 147
 << i, identifier >>
 << =, operator >>
 << j, identifier >>
 << -, operator >>
 << 1, literal >>
 << ;, seperator >>
+
+LINE NO: 148
 << break,keyword >>
 << ;, seperator >>
+
+LINE NO: 149
 << }, seperator >>
+
+LINE NO: 150
 << else, identifier >>
 << if,keyword >>
 << (, seperator >>
@@ -1121,6 +1432,8 @@
 << ), seperator >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 151
 << char,keyword >>
 << buff, identifier >>
 << [, operator >>
@@ -1134,6 +1447,8 @@
 << =, operator >>
 << '\0', literal >>
 << ;, seperator >>
+
+LINE NO: 152
 << strcat,keyword >>
 << (, seperator >>
 << buff, identifier >>
@@ -1155,6 +1470,8 @@
 << ", seperator >>", literal >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 153
 << writeToOutput, identifier >>
 << (, seperator >>
 << buff, identifier >>
@@ -1162,15 +1479,23 @@
 << 0, literal >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 154
 << i, identifier >>
 << =, operator >>
 << j, identifier >>
 << -, operator >>
 << 1, literal >>
 << ;, seperator >>
+
+LINE NO: 155
 << break,keyword >>
 << ;, seperator >>
+
+LINE NO: 156
 << }, seperator >>
+
+LINE NO: 157
 << else, identifier >>
 << if,keyword >>
 << (, seperator >>
@@ -1190,6 +1515,8 @@
 << 0, literal >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 158
 << if,keyword >>
 << (, seperator >>
 << ret, identifier >>
@@ -1198,6 +1525,8 @@
 << 1, literal >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 159
 << while,keyword >>
 << (, seperator >>
 << j, identifier >>
@@ -1208,6 +1537,8 @@
 << ), seperator >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 160
 << if,keyword >>
 << (, seperator >>
 << line, identifier >>
@@ -1219,6 +1550,8 @@
 << '\"', literal >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 161
 << substring, identifier >>
 << (, seperator >>
 << line, identifier >>
@@ -1230,19 +1563,33 @@
 << 1, literal >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 162
 << i, identifier >>
 << =, operator >>
 << j, identifier >>
 << ;, seperator >>
+
+LINE NO: 163
 << break,keyword >>
 << ;, seperator >>
+
+LINE NO: 164
 << }, seperator >>
+
+LINE NO: 165
 << j, identifier >>
 << +, operator >>
 << +, operator >>
 << ;, seperator >>
+
+LINE NO: 166
 << }, seperator >>
+
+LINE NO: 167
 << }, seperator >>
+
+LINE NO: 168
 << else, identifier >>
 << if,keyword >>
 << (, seperator >>
@@ -1252,6 +1599,8 @@
 << 2, literal >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 169
 << while,keyword >>
 << (, seperator >>
 << j, identifier >>
@@ -1262,6 +1611,8 @@
 << ), seperator >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 170
 << if,keyword >>
 << (, seperator >>
 << line, identifier >>
@@ -1274,6 +1625,8 @@
 << ', literal >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 171
 << substring, identifier >>
 << (, seperator >>
 << line, identifier >>
@@ -1285,19 +1638,33 @@
 << 1, literal >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 172
 << i, identifier >>
 << =, operator >>
 << j, identifier >>
 << ;, seperator >>
+
+LINE NO: 173
 << break,keyword >>
 << ;, seperator >>
+
+LINE NO: 174
 << }, seperator >>
+
+LINE NO: 175
 << j, identifier >>
 << +, operator >>
 << +, operator >>
 << ;, seperator >>
+
+LINE NO: 176
 << }, seperator >>
+
+LINE NO: 177
 << }, seperator >>
+
+LINE NO: 178
 << else, identifier >>
 << if,keyword >>
 << (, seperator >>
@@ -1307,6 +1674,8 @@
 << 3, literal >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 179
 << while,keyword >>
 << (, seperator >>
 << j, identifier >>
@@ -1317,6 +1686,45 @@
 << ), seperator >>
 << &, operator >>
 << &, operator >>
+<< !, operator >>
+<< isOperator, identifier >>
+<< (, seperator >>
+<< j, identifier >>
+<< ,, seperator >>
+<< j, identifier >>
+<< +, operator >>
+<< 1, literal >>
+<< ,, seperator >>
+<< n, identifier >>
+<< ), seperator >>
+<< &, operator >>
+<< &, operator >>
+<< !, operator >>
+<< isseperator, identifier >>
+<< (, seperator >>
+<< j, identifier >>
+<< ,, seperator >>
+<< j, identifier >>
+<< +, operator >>
+<< 1, literal >>
+<< ,, seperator >>
+<< n, identifier >>
+<< ), seperator >>
+<< &, operator >>
+<< &, operator >>
+<< line, identifier >>
+<< [, operator >>
+<< j, identifier >>
+<< ], operator >>
+<< !, operator >>
+<< =, operator >>
+<< ' ', literal >>
+<< ), seperator >>
+<< {, seperator >>
+
+LINE NO: 180
+<< if,keyword >>
+<< (, seperator >>
 << isLiteral, identifier >>
 << (, seperator >>
 << j, identifier >>
@@ -1327,16 +1735,27 @@
 << ,, seperator >>
 << n, identifier >>
 << ), seperator >>
-<< =, operator >>
+<< !, operator >>
 << =, operator >>
 << 3, literal >>
 << ), seperator >>
-<< {, seperator >>
+
+LINE NO: 181
+<< invalid, identifier >>
+<< =, operator >>
+<< 1, literal >>
+<< ;, seperator >>
+
+LINE NO: 182
 << j, identifier >>
 << +, operator >>
 << +, operator >>
 << ;, seperator >>
+
+LINE NO: 183
 << }, seperator >>
+
+LINE NO: 184
 << substring, identifier >>
 << (, seperator >>
 << line, identifier >>
@@ -1346,13 +1765,19 @@
 << j, identifier >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 185
 << i, identifier >>
 << =, operator >>
 << j, identifier >>
 << -, operator >>
 << 1, literal >>
 << ;, seperator >>
+
+LINE NO: 186
 << }, seperator >>
+
+LINE NO: 187
 << char,keyword >>
 << buff, identifier >>
 << [, operator >>
@@ -1366,6 +1791,16 @@
 << =, operator >>
 << '\0', literal >>
 << ;, seperator >>
+
+LINE NO: 188
+<< if,keyword >>
+<< (, seperator >>
+<< !, operator >>
+<< invalid, identifier >>
+<< ), seperator >>
+<< {, seperator >>
+
+LINE NO: 189
 << strcat,keyword >>
 << (, seperator >>
 << buff, identifier >>
@@ -1387,6 +1822,41 @@
 << ", literal >>", literal >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 190
+<< }, seperator >>
+
+LINE NO: 191
+<< else, identifier >>
+<< {, seperator >>
+
+LINE NO: 192
+<< strcat,keyword >>
+<< (, seperator >>
+<< buff, identifier >>
+<< ,, seperator >>
+<< "<< ", literal >>
+<< ), seperator >>
+<< ;, seperator >>
+<< strcat,keyword >>
+<< (, seperator >>
+<< buff, identifier >>
+<< ,, seperator >>
+<< subs, identifier >>
+<< ), seperator >>
+<< ;, seperator >>
+<< strcat,keyword >>
+<< (, seperator >>
+<< buff, identifier >>
+<< ,, seperator >>
+<< ", Invalid Identifier >>", literal >>
+<< ), seperator >>
+<< ;, seperator >>
+
+LINE NO: 193
+<< }, seperator >>
+
+LINE NO: 194
 << writeToOutput, identifier >>
 << (, seperator >>
 << buff, identifier >>
@@ -1394,11 +1864,19 @@
 << 0, literal >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 195
 << break,keyword >>
 << ;, seperator >>
+
+LINE NO: 196
 << }, seperator >>
+
+LINE NO: 197
 << else, identifier >>
 << {, seperator >>
+
+LINE NO: 198
 << if,keyword >>
 << (, seperator >>
 << isOperator, identifier >>
@@ -1432,6 +1910,8 @@
 << ' ', literal >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 199
 << substring, identifier >>
 << (, seperator >>
 << line, identifier >>
@@ -1441,12 +1921,16 @@
 << j, identifier >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 200
 << char,keyword >>
 << buff, identifier >>
 << [, operator >>
 << 100, literal >>
 << ], operator >>
 << ;, seperator >>
+
+LINE NO: 201
 << buff, identifier >>
 << [, operator >>
 << 0, literal >>
@@ -1454,6 +1938,8 @@
 << =, operator >>
 << '\0', literal >>
 << ;, seperator >>
+
+LINE NO: 202
 << strcat,keyword >>
 << (, seperator >>
 << buff, identifier >>
@@ -1461,6 +1947,8 @@
 << "<< ", literal >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 203
 << strcat,keyword >>
 << (, seperator >>
 << buff, identifier >>
@@ -1468,6 +1956,8 @@
 << subs, identifier >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 204
 << strcat,keyword >>
 << (, seperator >>
 << buff, identifier >>
@@ -1475,6 +1965,8 @@
 << ", identifier >>", literal >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 205
 << writeToOutput, identifier >>
 << (, seperator >>
 << buff, identifier >>
@@ -1482,24 +1974,48 @@
 << 0, literal >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 206
 << i, identifier >>
 << =, operator >>
 << j, identifier >>
 << -, operator >>
 << 1, literal >>
 << ;, seperator >>
+
+LINE NO: 207
 << break,keyword >>
 << ;, seperator >>
+
+LINE NO: 208
 << }, seperator >>
+
+LINE NO: 209
 << }, seperator >>
+
+LINE NO: 210
 << }, seperator >>
+
+LINE NO: 211
 << }, seperator >>
+
+LINE NO: 212
 << }, seperator >>
+
+LINE NO: 213
+
+LINE NO: 214
 << void,keyword >>
 << main,keyword >>
 << (, seperator >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 215
+
+LINE NO: 216
+
+LINE NO: 217
 << fin, identifier >>
 << =, operator >>
 << fopen,keyword >>
@@ -1509,6 +2025,8 @@
 << "r", literal >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 218
 << fout, identifier >>
 << =, operator >>
 << fopen,keyword >>
@@ -1518,6 +2036,8 @@
 << "w", literal >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 219
 << fprintf,keyword >>
 << (, seperator >>
 << fout, identifier >>
@@ -1525,6 +2045,15 @@
 << "< CHARACTER(S), TOKEN>\n", literal >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 220
+<< int,keyword >>
+<< k, identifier >>
+<< =, operator >>
+<< 1, literal >>
+<< ;, seperator >>
+
+LINE NO: 221
 << while,keyword >>
 << (, seperator >>
 << !, operator >>
@@ -1534,6 +2063,21 @@
 << ), seperator >>
 << ), seperator >>
 << {, seperator >>
+
+LINE NO: 222
+<< fprintf,keyword >>
+<< (, seperator >>
+<< fout, identifier >>
+<< ,, seperator >>
+<< "\n\nLINE NO: %d", literal >>
+<< ,, seperator >>
+<< k, identifier >>
+<< +, operator >>
+<< +, operator >>
+<< ), seperator >>
+<< ;, seperator >>
+
+LINE NO: 223
 << fgets,keyword >>
 << (, seperator >>
 << line, identifier >>
@@ -1543,10 +2087,14 @@
 << fin, identifier >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 224
 << processLine, identifier >>
 << (, seperator >>
 << ), seperator >>
 << ;, seperator >>
+
+LINE NO: 225
 << line, identifier >>
 << [, operator >>
 << 0, literal >>
@@ -1554,6 +2102,8 @@
 << =, operator >>
 << '\0', literal >>
 << ;, seperator >>
+
+LINE NO: 226
 << subs, identifier >>
 << [, operator >>
 << 0, literal >>
@@ -1561,4 +2111,8 @@
 << =, operator >>
 << '\0', literal >>
 << ;, seperator >>
+
+LINE NO: 227
 << }, seperator >>
+
+LINE NO: 228

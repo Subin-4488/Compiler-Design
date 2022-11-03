@@ -242,7 +242,7 @@ void convert()
             	}
         }
     }
-
+    printf("\n\n");
 }
 
 void main()
