@@ -70,25 +70,27 @@ int isEmpty(){
 
 void collectGrammer(){
 
-	printf("Enter the variables starting from START_SYMBOL without space:\n");
-	scanf("%s", var);
+    strcpy(var,"ETF");
 	vn=(int )strlen(var);
 	
-	printf("Enter the terminals without space:\n");
-	scanf("%s",ter);
+    strcpy(ter,"+*()a");
 	tn=(int )strlen(ter);
 
-	printf("Enter no of productions:\n");
-	scanf("%d",&n);
+    n=6;
 	p=(struct prod*)malloc(sizeof(struct prod)*n);
-
-	printf("Enter the Grammer Produtions:\n");
-	for (int i=0; i<n; i++){
-		printf("Enter LHS of prod %d: \n", i+1);
-		scanf(" %c",&p[i].LHS);
-		printf("Enter RHS of prod %d: \n", i+1);
-		scanf(" %s",p[i].RHS);
-	}
+    p[0].LHS='E';
+    strcpy(p[0].RHS,"E+T");
+    p[1].LHS='E';
+    strcpy(p[1].RHS,"T");
+    p[2].LHS='T';
+    strcpy(p[2].RHS,"T*F");
+    p[3].LHS='T';
+    strcpy(p[3].RHS,"F");
+    p[4].LHS='F';
+    strcpy(p[4].RHS,"(E)");
+    p[5].LHS='F';
+    strcpy(p[5].RHS,"a");
+	
 	return;
 }
 
