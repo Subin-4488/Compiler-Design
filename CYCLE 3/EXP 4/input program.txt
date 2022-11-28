@@ -1,0 +1,6 @@
+a= 30
+b = 20 - a /2
+sub =898
+c = b * ( 30 / a + 2 ) -  a
+id=6797
+printf("%d\n", sub+id);
