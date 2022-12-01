@@ -59,9 +59,9 @@ int isOperator(char ch){
       return 0;
 }
 
-int alreadyExist(){
+int alreadyExist(char a1, char op, char a2){
       for (int i=0; i<k; i++){
-            if (arr[i].arg1==arr[k].arg1 && arr[i].op==arr[k].op && arr[i].arg2==arr[k].arg2)
+            if (arr[i].arg1==a1 && arr[i].op==op && arr[i].arg2==a2)
                   return i;
       }
       return -1;
@@ -95,20 +95,19 @@ void _3AC(){
             if (!isOperator(pos[i]))
                   push(pos[i]);
             else{
-                  arr[k].LHS=sym;
-                  arr[k].op=pos[i];
-                  arr[k].arg2=pop();
-                  arr[k].arg1=pop();
-                  
-                  int temp=-1;
-                  if ((temp=alreadyExist())==-1){
+                  char a2=pop();
+                  char a1=pop();
+                  int temp;
+                  if ((temp=alreadyExist(a1, pos[i], a2))==-1){
+                        arr[k].LHS=sym;
+                        arr[k].op=pos[i];
+                        arr[k].arg2=a2;
+                        arr[k].arg1=a1;
                         push(arr[k++].LHS);
                         sym++;
                   }
                   else{
                         push(arr[temp].LHS);
-                        sym--;
-                        k--;
                   }
             }
       }
