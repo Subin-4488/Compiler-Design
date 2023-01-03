@@ -176,10 +176,7 @@ int visited(char arr[], int n)
 void visit(char arr[], int n)
 {
     res[rs].size = n;
-    for (int i = 0; i < n; i++)
-    {
-        strcpy(res[rs].ress, arr);
-    }
+    strcpy(res[rs].ress, arr);
 
     rs++;
 }
@@ -194,8 +191,8 @@ void convert()
     char *ptr, *q;
     while (!isEmpty())
     {
+        int ssize = que[f].size;
         ptr = dequeue();
-        int ssize = que[f - 1].size;
         for (int i = 0; i < t; i++)
         {
             q = getTransition(ptr, ssize, transitionSet[i]);
